@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+        integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .contacto {
+            background: #F4F1DF;
+            padding: 70px 10%;
+            color: #3E4E36;
+            font-family: Arial, sans-serif;
+        }
+
+        .contacto__titulo {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #3E4E36;
+        }
+
+        .contacto__titulo::after {
+            content: "";
+            display: block;
+            width: 90px;
+            height: 4px;
+            background: #8CA56E;
+            margin: 12px auto 0;
+            border-radius: 10px;
+        }
+
+        .contacto__descripcion {
+            text-align: center;
+            font-size: 1.05rem;
+            margin-bottom: 40px;
+            color: #5F6F52;
+        }
+
+        .contacto__formulario {
+            max-width: 700px;
+            margin: auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .contacto__grupo {
+            margin-bottom: 25px;
+        }
+
+        .contacto__label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #3E4E36;
+        }
+
+        .contacto__input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 2px solid #DDE8D2;
+            border-radius: 10px;
+            outline: none;
+            font-size: 1rem;
+            transition: 0.3s ease;
+            background: #FDFDFB;
+            color: #3E4E36;
+        }
+
+        .contacto__input:focus {
+            border-color: #8CA56E;
+            box-shadow: 0px 0px 10px rgba(140, 165, 110, 0.25);
+        }
+
+        .contacto__input--textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .contacto__boton {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 12px;
+            background: #8CA56E;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .contacto__boton:hover {
+            background: #5F6F52;
+            transform: translateY(-2px);
+        }
+
+        .contacto__redes-sociales {
+            margin-top: 30px;
+            text-align: center;
+            color: #3E4E36;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .contacto__redes {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 8px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #E8F0E2;
+            transition: 0.3s ease;
+        }
+
+        .contacto__redes:hover {
+            background: #8CA56E;
+            transform: scale(1.1);
+        }
+
+        .contacto__redes img {
+            object-fit: contain;
+        }
+    </style>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+    <header class="encabezado">
+        <a href="index.html" class="encabezado__logo-link">
+            <img src="./img/logo.png" alt="Logotipo de Only Students" class="encabezado__logo" width="100"
+                height="100" />
+        </a>
+        <ul class="encabezado-lista">
+            <li class="encabezado-lista__item">
+                <a href="sobre.html" class="encabezado-lista__link">Sobre</a>
+            </li>
+            <li class="encabezado-lista__item">
+                <a href="productos.html" class="encabezado-lista__link">Productos</a>
+            </li>
+            <li class="encabezado-lista__item">
+                <a href="contacto.html"
+                    class="encabezado-lista__item-boton encabezado-lista__item-boton--azul">Contactanos</a>
+            </li>
+            <li class="encabezado-lista__item">
+                <a href="faq.html" class="encabezado-lista__item-boton">FAQ</a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="contacto">
+        <h2 class="contacto__titulo">Contáctanos</h2>
+        <p class="contacto__descripcion">
+            ¿Tienes alguna pregunta o comentario? ¡Estamos aquí para ayudarte!
+        </p>
+        <form class="contacto__formulario">
+            <div class="contacto__grupo">
+                <label for="nombre" class="contacto__label">Nombre</label>
+                <input type="text" id="nombre" class="contacto__input" />
+            </div>
+            <div class="contacto__grupo">
+                <label for="email" class="contacto__label">Email</label>
+                <input type="email" id="email" class="contacto__input" />
+            </div>
+            <div class="contacto__grupo">
+                <label for="mensaje" class="contacto__label">Mensaje</label>
+                <textarea id="mensaje" class="contacto__input contacto__input--textarea"></textarea>
+            </div>
+            <button type="submit" class="contacto__boton">Enviar</button>
+            <p class="contacto__redes-sociales">
+                O nos puedes encontrar en nuestras redes sociales:
+                <a href="#" class="contacto__redes"><img src="./img/face.png" alt="Facebook" width="30"
+                        height="30" /></a>
+                <a href="#" class="contacto__redes"><img src="./img/x.jpg" alt="X" width="30" height="30" /></a>
+                <a href="#" class="contacto__redes"><img src="./img/ig.png" alt="Instagram" width="45"
+                        height="30" /></a>
+                @OnlyStudents
+            </p>
+        </form>
+    </section>
+
+    <footer class="pie_pagina">
+        <p class="pie_pagina_texto">&copy; Copyright Only Students - 2026</p>
+
+    </footer>
+</body>
+
+</html>
