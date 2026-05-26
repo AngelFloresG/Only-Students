@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  <title>Nosotros</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .productos {
+      background: #F4F1DF;
+      padding: 70px 10%;
+      font-family: Arial, sans-serif;
+    }
+
+    .productos__titulo {
+      text-align: center;
+      font-size: 2.7rem;
+      color: #3E4E36;
+      margin-bottom: 20px;
+    }
+
+    .productos__titulo::after {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 4px;
+      background: #8CA56E;
+      margin: 12px auto 0;
+      border-radius: 10px;
+    }
+
+    .productos__subtitulo {
+      font-size: 1.8rem;
+      color: #5F6F52;
+      margin: 50px 0 30px;
+      border-left: 6px solid #8CA56E;
+      padding-left: 15px;
+    }
+
+    /* ===== GRID ===== */
+
+    .papeleria__lista,
+    .snacks__lista {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 50px;
+    }
+
+    /* ===== TARJETAS ===== */
+
+    .producto {
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+      transition: 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .producto:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.15);
+    }
+
+    .producto__imagen {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .producto__nombre {
+      font-size: 1.4rem;
+      color: #3E4E36;
+      margin: 20px 20px 10px;
+    }
+
+    .producto__descripcion {
+      color: #5F6F52;
+      line-height: 1.7;
+      font-size: 0.97rem;
+      margin: 0 20px 25px;
+      flex-grow: 1;
+    }
+
+    .producto__precio {
+      font-size: 1.2rem;
+      color: #8CA56E;
+      font-weight: bold;
+      margin: 0 20px 15px;
+    }
+
+    /* ===== BOTON ===== */
+
+    .producto__enlace {
+      display: inline-block;
+      text-align: center;
+      background: #8CA56E;
+      color: white;
+      text-decoration: none;
+      padding: 14px;
+      margin: 0 20px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    .producto__enlace:hover {
+      background: #5F6F52;
+      transform: scale(1.03);
+    }
+  </style>
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+  <header class="encabezado">
+    <a href="index.html" class="encabezado__logo-link">
+      <img src="./img/logo.png" alt="Logotipo de Only Students" class="encabezado__logo" width="100" height="100" />
+    </a>
+    <ul class="encabezado-lista">
+      <li class="encabezado-lista__item">
+        <a href="sobre.html" class="encabezado-lista__link">Sobre</a>
+      </li>
+      <li class="encabezado-lista__item">
+        <a href="productos.html" class="encabezado-lista__link">Productos</a>
+      </li>
+      <li class="encabezado-lista__item">
+        <a href="contacto.html" class="encabezado-lista__item-boton encabezado-lista__item-boton--azul">Contactanos</a>
+      </li>
+      <li class="encabezado-lista__item">
+        <a href="faq.html" class="encabezado-lista__item-boton">FAQ</a>
+      </li>
+    </ul>
+  </header>
+
+  <section class="productos">
+    <h2 class="productos__titulo">Nuestros Productos</h2>
+    <h3 class="productos__subtitulo">Articulos de Papeleria</h3>
+    <div class="papeleria__lista">
+      <div class="producto">
+        <img src="./img/producto1.jpg" alt="Caja de lápices" class="producto__imagen" />
+        <h3 class="producto__nombre">Caja de lápices</h3>
+        <p class="producto__descripcion">Una caja de lápices con 12 lápices de colores.</p>
+        <p class="producto__precio">$60</p>
+        <a href="contacto.html" class="producto__enlace">Detalles</a>
+      </div>
+      <div class="producto">
+        <img src="./img/producto2.jpg" alt="Cuaderno de notas" class="producto__imagen" />
+        <h3 class="producto__nombre">Cuaderno de notas</h3>
+        <p class="producto__descripcion">Un cuaderno de notas con 100 páginas para tus apuntes.</p>
+        <p class="producto__precio">$25</p>
+        <a href="contacto.html" class="producto__enlace">Detalles</a>
+      </div>
+      <div class="producto">
+        <img src="./img/producto3.jpg" alt="Cartulina blanca" class="producto__imagen" />
+        <h3 class="producto__nombre">Cartulina blanca</h3>
+        <p class="producto__descripcion">Una cartulina blanca de alta calidad para tus proyectos escolares.</p>
+        <p class="producto__precio">$10</p>
+        <a href="contacto.html" class="producto__enlace">Detalles</a>
+      </div>
+      <div class="producto">
+        <img src="./img/producto4.jpg" alt="Caja de pluma" class="producto__imagen" />
+        <h3 class="producto__nombre">Caja de plumas tinta negra</h3>
+        <p class="producto__descripcion">Una caja de plumas con tinta negra de alta calidad para tus escrituras.</p>
+        <p class="producto__precio">$55</p>
+        <a href="contacto.html" class="producto__enlace">Detalles</a>
+      </div>
+      <div class="producto">
+        <img src="./img/producto5.jpg" alt="Caja de pluma tinta azul" class="producto__imagen" />
+        <h3 class="producto__nombre">Caja de plumas tinta azul</h3>
+        <p class="producto__descripcion">Una caja de plumas con tinta azul de alta calidad para tus escrituras.</p>
+        <p class="producto__precio">$42</p>
+        <a href="contacto.html" class="producto__enlace">Detalles</a>
+      </div>
+      <div class="producto">
+        <img src="./img/producto6.jpg" alt="Paquete de 10 hojas blancas" class="producto__imagen" />
+        <h3 class="producto__nombre">Paquete de 10 hojas blancas</h3>
+        <p class="producto__descripcion">Un paquete de 10 hojas blancas de alta calidad para tus proyectos escolares.</p>
+        <p class="producto__precio">$20</p>
+        <a href="contacto.html" class="producto__enlace">Detalles</a>
+      </div>
+    </div>
+    <h3 class="productos__subtitulo">Snacks</h3>
+    <div class="snacks__lista">
+      <div class="producto">
+        <img src="./img/producto7.jpg" alt="Jugo" class="producto__imagen" />
+        <h3 class="producto__nombre">Jugo</h3>
+        <p class="producto__descripcion">Un jugo refrescante y nutritivo para tus momentos de hambre.</p>
+        <p class="producto__precio">$15</p>
+        <a href="contacto.html" class="producto__enlace">Detalles</a>
+      </div>
+      <div class="producto">
+        <img src="./img/producto8.jpg" alt="Bebida energética" class="producto__imagen" />
+        <h3 class="producto__nombre">Bebida energética</h3>
+        <p class="producto__descripcion">Una bebida energética refrescante para mantenerte alerta durante el día.</p>
+        <p class="producto__precio">$36</p>
+        <a href="contacto.html" class="producto__enlace">Detalles</a>
+      </div>
+      <div class="producto">
+        <img src="./img/producto9.jpg" alt="Papas" class="producto__imagen" />
+        <h3 class="producto__nombre">Papas</h3>
+        <p class="producto__descripcion">Papas fritas crujientes, perfectas para un snack delicioso.</p>
+        <p class="producto__precio">$50</p>
+        <a href="contacto.html" class="producto__enlace">Detalles</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="pie_pagina">
+    <p class="pie_pagina_texto">&copy; Copyright Only Students - 2026</p>
+
+  </footer>
+</body>
+
+</html>

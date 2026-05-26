@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+        integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .faq {
+            background: #F4F1DF;
+            padding: 70px 10%;
+            font-family: Arial, sans-serif;
+        }
+
+        .faq__titulo {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #3E4E36;
+            margin-bottom: 45px;
+        }
+
+        .faq__titulo::after {
+            content: "";
+            display: block;
+            width: 90px;
+            height: 4px;
+            background: #8CA56E;
+            margin: 12px auto 0;
+            border-radius: 10px;
+        }
+
+        .faq__item {
+            background: #ffffff;
+            margin-bottom: 18px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+            border-left: 6px solid #8CA56E;
+            transition: 0.3s ease;
+        }
+
+        .faq__item:hover {
+            transform: translateY(-3px);
+        }
+
+        .faq__pregunta {
+            padding: 22px;
+            cursor: pointer;
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: #3E4E36;
+            list-style: none;
+            position: relative;
+        }
+
+        .faq__pregunta::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Icono + */
+
+        .faq__pregunta::after {
+            content: "+";
+            position: absolute;
+            right: 25px;
+            font-size: 1.5rem;
+            color: #8CA56E;
+            transition: 0.3s ease;
+        }
+
+        .faq__item[open] .faq__pregunta::after {
+            content: "−";
+        }
+
+        .faq__respuesta {
+            padding: 0 22px 22px;
+            color: #5F6F52;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+    </style>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+    <header class="encabezado">
+        <a href="index.html" class="encabezado__logo-link">
+            <img src="./img/logo.png" alt="Logotipo de Only Students" class="encabezado__logo" width="100"
+                height="100" />
+        </a>
+        <ul class="encabezado-lista">
+            <li class="encabezado-lista__item">
+                <a href="sobre.html" class="encabezado-lista__link">Sobre</a>
+            </li>
+            <li class="encabezado-lista__item">
+                <a href="productos.html" class="encabezado-lista__link">Productos</a>
+            </li>
+            <li class="encabezado-lista__item">
+                <a href="contacto.html"
+                    class="encabezado-lista__item-boton encabezado-lista__item-boton--azul">Contactanos</a>
+            </li>
+            <li class="encabezado-lista__item">
+                <a href="faq.html" class="encabezado-lista__item-boton">FAQ</a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="faq">
+
+        <h2 class="faq__titulo">Preguntas Frecuentes</h2>
+
+        <details class="faq__item">
+            <summary class="faq__pregunta">
+                ¿Cuáles son los horarios de atención?
+            </summary>
+            <p class="faq__respuesta">
+                El servicio es 24 horas al día, 7 días a la semana, durante todo el año.
+            </p>
+        </details>
+
+        <details class="faq__item">
+            <summary class="faq__pregunta">
+                ¿Ofrecen opciones veganas?
+            </summary>
+            <p class="faq__respuesta">
+                Sí, contamos con una variedad de snacks veganos para satisfacer tus
+                necesidades.
+            </p>
+        </details>
+
+        <details class="faq__item">
+            <summary class="faq__pregunta">
+                ¿Tienen servicio a domicilio?
+            </summary>
+            <p class="faq__respuesta">
+                Sí, ofrecemos servicio a domicilio en ciertas áreas. Consulta nuestra sección de contacto para más detalles.
+            </p>
+        </details>
+
+        <details class="faq__item">
+            <summary class="faq__pregunta">
+                ¿Cómo puedo realizar un pedido?
+            </summary>
+            <p class="faq__respuesta">
+                Puedes realizar tu pedido a través de nuestra página web o llamando a
+                nuestro número de atención al cliente.
+            </p>
+        </details>
+
+        <details class="faq__item">
+            <summary class="faq__pregunta">
+                ¿Aceptan pago con transferencia?
+            </summary>
+            <p class="faq__respuesta">
+                Sí, aceptamos pagos por transferencia bancaria.
+            </p>
+        </details>
+
+        <details class="faq__item">
+            <summary class="faq__pregunta">
+                ¿Tienen promociones especiales para estudiantes?
+            </summary>
+            <p class="faq__respuesta">
+                Sí, ofrecemos descuentos especiales para estudiantes universitarios.
+                ¡Consulta nuestras promociones vigentes!
+            </p>
+        </details>
+
+    </section>
+
+    <footer class="pie_pagina">
+        <p class="pie_pagina_texto">&copy; Copyright Only Students - 2026</p>
+
+    </footer>
+</body>
+
+</html>

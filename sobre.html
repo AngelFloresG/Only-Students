@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+        integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-color: #F4F1DF;
+        }
+
+        .sobre-nosotros {
+            background: #F4F1DF;
+            padding: 70px 10%;
+            color: #3E4E36;
+            font-family: Arial, sans-serif;
+        }
+
+        .sobre-nosotros__titulo {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #3E4E36;
+            margin-bottom: 35px;
+            position: relative;
+        }
+
+        .sobre-nosotros__titulo::after {
+            content: "";
+            display: block;
+            width: 90px;
+            height: 4px;
+            background: #8CA56E;
+            margin: 12px auto 0;
+            border-radius: 10px;
+        }
+
+        .sobre-nosotros__descripcion {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            margin-bottom: 22px;
+            text-align: justify;
+            background: #ffffff;
+            padding: 22px;
+            border-left: 6px solid #8CA56E;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .sobre-nosotros__destacado {
+            color: #8CA56E;
+            font-weight: bold;
+        }
+
+        .sobre-nosotros__lista {
+            list-style: none;
+            margin-top: 20px;
+            padding: 0;
+        }
+
+        .sobre-nosotros__item {
+            background: #E8F0E2;
+            margin-bottom: 15px;
+            padding: 16px 20px;
+            border-radius: 10px;
+            color: #3E4E36;
+            font-weight: 500;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+            transition: 0.3s ease;
+        }
+
+        .sobre-nosotros__item:hover {
+            background: #8CA56E;
+            color: #ffffff;
+            transform: translateX(8px);
+        }
+    </style>
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+    <header class="encabezado">
+      <a href="index.html" class="encabezado__logo-link">
+        <img
+        src="./img/logo.png"
+        alt="Logotipo de Only Students"
+        class="encabezado__logo"
+        width="100"
+        height="100"
+      />
+      </a>
+      <ul class="encabezado-lista">
+        <li class="encabezado-lista__item">
+          <a href="sobre.html" class="encabezado-lista__link">Sobre</a>
+        </li>
+        <li class="encabezado-lista__item">
+          <a href="productos.html" class="encabezado-lista__link">Productos</a>
+        </li>
+        <li class="encabezado-lista__item">
+          <a
+            href="contacto.html"
+            class="encabezado-lista__item-boton encabezado-lista__item-boton--azul"
+            >Contactanos</a
+          >
+        </li>
+        <li class="encabezado-lista__item">
+          <a href="faq.html" class="encabezado-lista__item-boton"
+            >FAQ</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <section class="sobre-nosotros">
+        <h2 class="sobre-nosotros__titulo">Sobre Nosotros</h2>
+        <p class="sobre-nosotros__descripcion">
+            En Only Students, nos apasiona ofrecer a los estudiantes una experiencia de compra única y conveniente.
+            Fundada en 2026, <b class="sobre-nosotros__destacado">nuestra misión es Brindar a estudiantes universitarios
+                productos de comida y articulos de papeleria de manera rapida, accesible y confiable</b>.
+        </p>
+        <p class="sobre-nosotros__descripcion">
+            Nuestro equipo está compuesto por jóvenes emprendedores que entienden las necesidades y preferencias de los
+            estudiantes. Nos esforzamos por seleccionar cuidadosamente nuestros productos, asegurándonos de ofrecer
+            opciones que sean tanto sabrosas como nutritivas.
+        </p>
+        <p class="sobre-nosotros__descripcion">
+            En Only Students, creemos en la importancia de apoyar a la comunidad estudiantil. Por eso, trabajamos con
+            proveedores locales y nos comprometemos a ofrecer un servicio rápido y amigable. Estamos aquí para hacer que
+            tu experiencia de compra sea lo más fácil y agradable posible.
+        </p>
+        <p class="sobre-nosotros__descripcion">
+            Nuestra vision es ser una empresa lider en el mercado estudiantil local y nacional, reconocida por la
+            innovacion.
+        </p>
+        <p class="sobre-nosotros__descripcion">
+            Descripcion del servicio.
+        <ul class="sobre-nosotros__lista">
+            <li class="sobre-nosotros__item">Servicio diario las 24 horas del día.</li>
+            <li class="sobre-nosotros__item">Servicio presencial y con envio.</li>
+            <li class="sobre-nosotros__item">Atencion todo el año, incluyendo dias festivos.</li>
+            <li class="sobre-nosotros__item">Edad: A partir de 6 años en adelante.</li>
+            <li class="sobre-nosotros__item">Instalaciones seguras, limpias y con areas dedicadas a cada servicio.</li>
+            <li class="sobre-nosotros__item">Personal capacitado y certificado en atencion al cliente, primeros auxilios
+                y manejo de vehiculos motorizados.</li>
+        </ul>
+        </p>
+
+    </section>
+
+    <footer class="pie_pagina">
+        <p class="pie_pagina_texto">&copy; Copyright Only Students - 2026</p>
+
+    </footer>
+</body>
+
+</html>
