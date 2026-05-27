@@ -50,3 +50,25 @@
         display: block;
     }
 }
+
+@media screen and (max-width: 798px) {
+    .pie_pagina {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2em 1em;
+        gap: 20px;
+    }
+    .redes-sociales__lista {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 1em;
+    }
+    .pie_pagina__lista {
+        padding: 0;
+    }
+    .pie_pagina__lista li {
+        margin: 0.5em 0;
+    }
+}

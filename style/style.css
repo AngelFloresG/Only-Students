@@ -154,3 +154,57 @@
     margin-top: 20px;
     font-weight: 400;
 }
+
+@media (max-width: 768px) {
+    .banner {
+        height: auto;
+        padding: 3em 1em;
+        background-position: center; 
+    }
+    .banner__titulo {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6); 
+        padding: 1.5em;
+        border-radius: 15px;
+        color: white;
+    }
+    .titulo_empresa {
+        color: white;
+    }
+    .cuenta {
+        grid-template-columns: 100%;
+        height: auto;
+        padding: 3em 0;
+        background-position: center; 
+    }
+    .cuenta__container {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .cuenta__boton {
+        width: 80%;
+        margin: 1em auto;
+    }
+    .beneficios-lista {
+        flex-direction: column;
+        margin: 2em 1em;
+    }
+    .beneficios-lista__item {
+        width: 90%;
+        margin-bottom: 2em;
+    }
+    .lista-servicios {
+        flex-direction: column;
+        align-items: center;
+        margin: 2em 0;
+        gap: 2em;
+    }
+    .item-servicios__imagen {
+        width: 150px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
